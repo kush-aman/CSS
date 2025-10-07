@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin</title>
+    <style>
+        *{
+            padding: 0; margin: 0;
+        }
+        .pad{height: 50px;
+            width: 50px;
+            padding: 2px;
+        }
+        #first{
+            background-color: slateblue;
+            margin: 5px 5px 25px 5px;/*If only one value is provide it will set all 4 values to that same value for ex- if margin: 4px the magrin will be 4px from all four sides this same concept works for padding also*/
+        }
+        #second{
+            background-color: darkgreen;
+            margin: 50px 5px 5px 5px;/*margin only takes the highest value if 2 diffferent values are defined it will take only the highest value between them in this case second div is below the first div the initial distance between first div bottom margin and second div top margin is 5px now if we change the top margin of second div to 50px the distance will increase between both the divs but if we let the bottom top margin to remain 50px and change the first div bottom margin to 25px the distance between them will not be added it will actually remain the same as before because the maximum value or distance between them was already defined 50px by the second div*/
+        }
+    </style>
+</head>
+<body>
+    <div id="first" class = "pad">first</div>
+    <div id="second" class = "pad">second</div>
+</body>
+</html>
