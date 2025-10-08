@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display property</title>
+    <style>
+        *{
+            margin: 0; padding: 0;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: olivedrab;
+            margin: 5px; 
+
+            display: inline-block;
+        }
+        #box1{
+            display: none;
+        }/*what this Display: none actually does is to actually leave its position and if there is any next block or element next to it or below it or anywhere beside it, it will take his space it is a bit like the visibility: hidden tag but in hidden visibility the block or element does not lose its space it remains there but we won't be able to see it.*/
+    </style>
+</head>
+<body>
+    <div id="box1" class = "box">box1</div>
+    <div id="box2" class = "box">box2</div>
+    <div id="box3" class = "box">box3</div>
+</body>
+</html>

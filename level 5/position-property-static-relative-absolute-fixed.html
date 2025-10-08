@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position property</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        .box{background-color: cadetblue;
+        margin: 5px;
+        height: 50px;
+    width: 50px;}
+        #div1{position: static;}
+        #div2{position: relative;
+        top: 10px;
+        left: 50px;}/*It will take the cordinates for its initial position not from the top left of the web page*/
+        #div3{position: absolute;
+        top: 20px;
+        left: 60px;}/*This will take the cordinates from the top left of the web page and not from its initial position*/
+        #div4{position: fixed;
+        right: 50px;}
+    </style>
+</head>
+<body>
+    <div id="div1" class = "box">box1</div>
+    <div id="div2" class = "box">box2</div>
+    <div id="div3" class = "box">box3</div>
+    <div id="div4" class = "box">box4</div>
+    <div class="box">box</div>
+    <div class="box">box</div>
+    <div class="box">box</div>
+    <div class="box">box</div>
+    <div class="box">box</div>
+    <div class="box">box</div>
+    <div class="box">box</div>
+
+</body>
+</html>

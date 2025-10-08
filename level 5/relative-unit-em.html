@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative unit: em</title>
+    <style>
+        *{
+            margin: 0; padding: 0;
+        }
+        #first{
+            height: 100px;
+            width: 200px;
+            background-color: olivedrab;
+            font-size: 10px;
+        }
+        #second{
+            height: 60%;
+            width: 50%;
+            background-color: brown;
+            font-size: 2.5em;/*This means that the font size of the text in this id will be 2.5 times bigger than the size of the parent text which is in the id named #first if the font-size of parent text will increase the size of font of this child id will increase 2.5 times the font size of parent font size and same goes for the decrement also*/
+        }
+    </style>
+</head>
+<body>
+    <div id="first">
+        first
+        <div id="second">
+            Second
+        </div>
+    </div>
+</body>
+</html>
+</body>
+</html>
