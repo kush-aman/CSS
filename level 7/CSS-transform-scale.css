@@ -1,0 +1,22 @@
+.box{
+   height: 50px;
+   width: 50px;
+   background-color: plum; 
+   border: 2px solid black;
+   border-radius: 15px;
+   position: relative;
+   top: 100px;
+   left: 100px;
+
+   transition: all 1s ease-in-out 0s;
+}
+.box:hover{
+    background-color: brown;
+    border-radius: 15px;
+    transform: scale(2);
+}
+.box:active{
+    transform: scale(4);
+}
+/*transform: scalex(2) = increase 2 times only in x axis*/
+/*transform: scaley(2) = increase 2 times only in y axis*/

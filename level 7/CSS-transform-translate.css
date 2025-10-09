@@ -1,0 +1,20 @@
+.box{
+   height: 50px;
+   width: 50px;
+   background-color: plum; 
+   border: 2px solid black;
+   border-radius: 15px;
+   position: relative;
+   top: 100px;
+   left: 100px;
+
+   transition: all 1s ease-in-out 0s;
+}
+.box:hover{
+    background-color: brown;
+    border-radius: 15px;
+    transform: translate(20px);
+}
+.box:active{
+    transform: translate(35px , 55px);
+}

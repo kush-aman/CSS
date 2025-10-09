@@ -1,0 +1,28 @@
+.box{
+   height: 50px;
+   width: 50px;
+   background-color: plum; 
+   border: 2px solid black;
+   border-radius: 15px;
+   position: relative;
+   top: 10px;
+   left: 10px;
+
+   /* animation-name: travel;
+   animation-duration: 2s;
+   animation-time-function: ease-in-out;
+   animation-delay: 0s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate; */
+
+   animation: travel 2s ease-in-out 0s infinite alternate ;
+}
+@keyframes travel {
+    /* from{left: 10px;}
+    to{left: 200px;}  */
+    0%{left: 10px;}
+    50%{left: 50px;}
+    60%{left: 160px; top: 50px;} /*top 50px means leave 50px above the object */
+    100%{left: 200px;}
+    /* these percentage means the percent of animation duration */
+}
